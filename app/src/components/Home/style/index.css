@@ -1,0 +1,55 @@
+#recomment{
+    width : 100%;
+    height: 1.28rem;
+    background: #Fcc
+}
+#navbar{
+    width:100%;
+    height: .88rem;
+    margin-top: 10px;
+    background: red
+}
+#content{
+    width: 100%;
+    height: 3.10rem;
+    padding: 5px 0 18px;
+    background: #Fcc;
+    display: flex
+  
+}
+#content>div{
+   width: 1.5rem;
+   height: 1.32rem;
+   padding:2px 0
+
+}
+
+#navscoll{
+    width: 100%;
+    height: 3.75rem;
+    background: red
+}
+#navscoll>.nav_container{
+    width: 100%;
+    height: 100%
+}
+#navscoll>.nav_container>.swiper-wrapper{
+    width: 100%;
+    height: 100%
+}
+#navscoll>.nav_container>.swiper-wrapper>.swiper-slide{
+    width: 100%;
+    height: 100%;
+}
+
+/*#navscoll>.nav_container>.swiper-wrapper>.swiper-slide>div{
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+#navscoll>.nav_container>.swiper-wrapper>.swiper-slide>div>img{
+    width: 100%;
+    height: 100%;
+    float: left;
+    
+}*/
