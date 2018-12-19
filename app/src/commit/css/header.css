@@ -1,7 +1,7 @@
 .header{
     width:100%;
     background: #2873FF;
-    height: 88px;
+   
     position:fixed;
     top:0;
     left:0;
@@ -14,17 +14,63 @@
     justify-content: space-between
 }
 .header .head_sea>div{
-    width:30px;
-    height:30px;
+    width:.6rem;
+    height:.6rem;
     border-radius: 50%;
     background: #fff;
-    margin: 0 10px;
-    align-items: center
+    margin: 0 .2rem;
+    align-items: center;
+    margin-top: .2rem;
+    background: url(//s.autoimg.cn/mass/avatar.png) no-repeat;
 }
+
+.header>.head_sea>p:nth-of-type(1)>a{
+    font-size: .4rem;
+    font-weight: bolder;
+    color: #fff;
+    width:2.2rem;
+    height: 1rem;
+    text-align: center;
+    line-height: 1rem;
+    display: block
+}
+
+.header>.head_sea>p:nth-of-type(2){
+    width:3.32rem;
+    height:.56rem;
+    border: none;
+    border-radius: .05rem;
+    background: #fff;
+    margin-top: .2rem;
+    margin-left: -0.4rem
+}
+.header>.head_sea>p:nth-of-type(2)>.icon{
+    font-size: .4rem;
+}
+.header>.head_sea>p:nth-of-type(2)>span:nth-child(1){
+    color: #2873FF;
+    display: block;
+    float: left;
+    padding: 7px
+}
+.header>.head_sea>p:nth-of-type(2)>span:nth-child(2){
+    color: #888;
+    display: block;
+    float: right;
+    padding: 7px
+}
+.header>.head_sea>p:nth-of-type(3){
+    display: block;
+    padding-top: .2rem;
+    color: #fff;
+}
+.header>.head_sea>p:nth-of-type(3)>span{
+    font-size: .5rem
+}
+/*导航栏*/
 .header .head_nav{
     display: flex;
     height: 50%;
-    
 }
 .header .head_nav li{
     width: 100%;
@@ -33,13 +79,13 @@
 }
 .header .head_nav li a{
    height: 100%;
-    text-align: center;
-   line-height: 44px;
+   text-align: center;
+   line-height: .8rem;
    display: block;
-   font-size:18px;
+   font-size:.36rem;
    color: #fff;
    opacity: 0.5;
-   font-family:"黑体"；
+   font-family:"黑体";
 }
 .header .head_nav li .active{
     opacity: 1
@@ -47,9 +93,19 @@
 .content{
     width: 100%;
     position: absolute;
-    top:88px;
+    top:1.76rem;
     bottom: 0;
     right: 0;
     left:0;
-    background: #ffc;
+    background: #fcf;
+}
+.header .head_nav li .down{
+    font-size: .5rem;
+    color: #fff;
+    line-height: .8rem;
+    padding-right: .2rem
+}
+.header .head_nav li:nth-child(6){
+    width: 10%;
+    
 }

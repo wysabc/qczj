@@ -1,8 +1,7 @@
 import React, { Component,} from 'react';
 import {HashRouter as Router, Route,NavLink,Switch} from "react-router-dom"
 import {Provider} from "react-redux"
-import "./commit/css/reset.css"
-import "./commit/css/header.css"
+import store from "./store"
 import Redirect from 'react-router-dom/Redirect';
 //引入组件
 import Home from "./components/Home/home"
@@ -13,25 +12,22 @@ import Register from "./components/Login/register"
 import My from "./components/My/My"
 import Server from "./components/Server/Server"
 import Used from "./components/Used/Used"
+import Header from "./components/header"
 class App extends Component {
   render() {
     return (
+      <Provider store = {store}>
        <Router>
          <div>
          <div className = "header">
-              <div className = "head_sea">  
-              <p><NavLink to = "/home">汽车之家</NavLink></p>
-              <p><input type = "text" /></p>
-              <p><i className="fa fa-mobile" aria-hidden="true"></i></p>
-              <div></div>
-
-              </div>
+             <Header />
               <ul className = "head_nav">
                   <li><NavLink to = "/home">首页</NavLink></li>
                   <li><NavLink to = "/find">找车</NavLink></li>
                   <li><NavLink to = "/forum">论坛</NavLink></li>
                   <li><NavLink to = "/used">二手车</NavLink></li>
                   <li><NavLink to = "/server">服务</NavLink></li>
+                  <li><span className = "iconfont down">&#xe733;</span></li>
                   {/*<li><NavLink to = "/my">个人</NavLink></li>
                   <li><NavLink to = "/login">登录</NavLink></li>
     <li><NavLink to = "/register">注册</NavLink></li>*/}
@@ -54,7 +50,7 @@ class App extends Component {
           </div>
          </div>
        </Router>
-   
+      </Provider>
     );
   }
 }
