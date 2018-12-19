@@ -1,7 +1,12 @@
 import React, { Component,} from 'react';
 import {HashRouter as Router, Route,NavLink,Switch} from "react-router-dom"
 import {Provider} from "react-redux"
+<<<<<<< HEAD
 import store from "./store"
+=======
+
+import "./commit/css/header.css"
+>>>>>>> zzz
 import Redirect from 'react-router-dom/Redirect';
 //引入组件
 import Home from "./components/Home/home"
@@ -12,11 +17,20 @@ import Register from "./components/Login/register"
 import My from "./components/My/My"
 import Server from "./components/Server/Server"
 import Used from "./components/Used/Used"
+<<<<<<< HEAD
 import Header from "./components/header"
 class App extends Component {
   render() {
     return (
       <Provider store = {store}>
+=======
+//引store
+import store from "./store"
+class App extends Component {
+  render() {
+    return (
+      <Provider store={store}>
+>>>>>>> zzz
        <Router>
          <div>
          <div className = "header">
@@ -35,6 +49,7 @@ class App extends Component {
               
            </div>
            <div className = "content">
+          
            <Switch>
                 <Route path = "/home" exact component = {Home}></Route>
                 <Route path = "/find"  component = {Find}></Route>
@@ -47,10 +62,16 @@ class App extends Component {
                 <Redirect path = "/" to = "home"></Redirect>
             
            </Switch>
+         
           </div>
          </div>
        </Router>
+<<<<<<< HEAD
       </Provider>
+=======
+       </Provider>
+   
+>>>>>>> zzz
     );
   }
 }
