@@ -1,0 +1,55 @@
+.header{
+    width:100%;
+    background: #2873FF;
+    height: 88px;
+    position:fixed;
+    top:0;
+    left:0;
+    right: 0;
+}
+.header .head_sea{
+    width:100%;
+    display: flex;
+    height:50%;
+    justify-content: space-between
+}
+.header .head_sea>div{
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+    background: #fff;
+    margin: 0 10px;
+    align-items: center
+}
+.header .head_nav{
+    display: flex;
+    height: 50%;
+    
+}
+.header .head_nav li{
+    width: 100%;
+    text-align: center;
+    line-height: 100%
+}
+.header .head_nav li a{
+   height: 100%;
+    text-align: center;
+   line-height: 44px;
+   display: block;
+   font-size:18px;
+   color: #fff;
+   opacity: 0.5;
+   font-family:"黑体"；
+}
+.header .head_nav li .active{
+    opacity: 1
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top:88px;
+    bottom: 0;
+    right: 0;
+    left:0;
+    background: #ffc;
+}
