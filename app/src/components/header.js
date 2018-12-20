@@ -6,13 +6,21 @@ import {
 } from "../action/actionCreator"
 class Header extends Component{
     render(){
-        console.log(this.props)
+        
+        let {list} = this.props;      
         return(
             <Fragment> 
                 <div className = "head_sea">  
                     <p><NavLink to = "/home">汽车之家</NavLink></p>
                     <p>
                         <span className = "iconfont icon">&#xe6d8;</span>
+                        <i>
+                            {
+                                list.map((item,index)=>{
+                                    return <span key = {index}>{item.name}</span>
+                                })
+                            }
+                        </i>
                         <span className = "iconfont icon">&#xe642;</span>
                     </p>
                     <p><span className = "iconfont app">&#xe66e;</span></p>

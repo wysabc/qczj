@@ -1,7 +1,6 @@
 .header{
     width:100%;
     background: #2873FF;
-   
     position:fixed;
     top:0;
     left:0;
@@ -51,13 +50,33 @@
     color: #2873FF;
     display: block;
     float: left;
-    padding: 7px
+    padding: .13rem;
+    font-size: .3rem;
 }
-.header>.head_sea>p:nth-of-type(2)>span:nth-child(2){
+.header>.head_sea>p:nth-of-type(2)>i{
+    float:left;
+    width:2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-top:.1rem ;
+    color: #888;
+    overflow: hidden;
+    font-style: normal;
+}
+.header>.head_sea>p:nth-of-type(2)>i>span{
+    border-left: .02rem solid #888;
+    padding: 0 .1rem 
+}
+.header>.head_sea>p:nth-of-type(2)>i>span:first-child{
+    border-left: none;
+}
+.header>.head_sea>p:nth-of-type(2)>span:nth-of-type(2){
     color: #888;
     display: block;
     float: right;
-    padding: 7px
+    padding: 7px;
+  
 }
 .header>.head_sea>p:nth-of-type(3){
     display: block;
@@ -98,6 +117,7 @@
     right: 0;
     left:0;
     background: #fcf;
+    overflow-y: scroll;
 }
 .header .head_nav li .down{
     font-size: .5rem;

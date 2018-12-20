@@ -5,7 +5,7 @@ export default class Navscoll extends Component {
     render() {
         let { navlist } = this.props
 
-        console.log(navlist)
+      
         return (
             <div id="navscoll">
                 <div className="swiper-container nav_container" refs="nav_container">

@@ -23,7 +23,7 @@ const defaultState={
 }
 
 export default (state=defaultState,action)=>{
-    console.log(action.type)
+    
     switch (action.type){
         case "GET_CONTENT_FULFILLED" : 
             let getcontentlist=JSON.parse(JSON.stringify(state));
