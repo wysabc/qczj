@@ -6,8 +6,12 @@ import {
 } from "../action/actionCreator"
 class Header extends Component{
     render(){
+<<<<<<< HEAD
         
         let {list} = this.props;      
+=======
+    
+>>>>>>> zzz
         return(
             <Fragment> 
                 <div className = "head_sea">  

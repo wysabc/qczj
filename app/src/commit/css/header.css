@@ -118,6 +118,10 @@
     left:0;
     background: #fcf;
     overflow-y: scroll;
+<<<<<<< HEAD
+=======
+    overflow-x: hidden
+>>>>>>> zzz
 }
 .header .head_nav li .down{
     font-size: .5rem;

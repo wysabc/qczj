@@ -4,6 +4,10 @@ const defaultState = {
     alllist : []
 }
 export default (state = defaultState,action)=>{
+<<<<<<< HEAD
+=======
+  
+>>>>>>> zzz
     switch(action.type){
         case "FINDCAR_LIST_FULFILLED":
             let getCarList = JSON.parse(JSON.stringify(state));

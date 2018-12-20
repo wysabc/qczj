@@ -5,14 +5,23 @@ export default class Navscoll extends Component {
     render() {
         let { navlist } = this.props
 
+<<<<<<< HEAD
       
+=======
+        //console.log(navlist)
+>>>>>>> zzz
         return (
             <div id="navscoll">
-                <div className="swiper-container nav_container" refs="nav_container">
+                <div className="swiper-container nav_container" ref="nav_container">
                     <div className="swiper-wrapper">
-                        <div className="swiper-slide">Slide 1</div>
-                        <div className="swiper-slide">Slide 2</div>
-                        <div className="swiper-slide">Slide 3</div>
+                       {
+                            navlist.map((item,index)=>{
+                                return <div className="swiper-slide" key={index}>
+                                        <img  src={item} />
+                                </div>
+                            })
+                        }
+                       
                     </div>
                     
                     <div className="swiper-pagination nav_pagination"></div>
@@ -23,7 +32,7 @@ export default class Navscoll extends Component {
         )
     }
     componentDidMount(){
-              new Swiper (this.refs.nav_container, {
+        var mySwiper = new Swiper (this.refs.nav_container, {
                   
                     loop: true, // 循环模式选项
                     
@@ -32,7 +41,7 @@ export default class Navscoll extends Component {
                     el: '.nav_pagination',
                     },
                     autoplay: {
-                        delay: 3000,
+                        delay: 2000,
                         disableOnInteraction: false,
                         }
                   })

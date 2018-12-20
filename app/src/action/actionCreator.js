@@ -9,10 +9,13 @@ export const head_list_action = ()=>({
         .then(res=>res.json())
         .then((data)=>{
             data = data.result.list
+<<<<<<< HEAD
+=======
+            
+>>>>>>> zzz
             resolve(data)
 
         })
     })
 })
-
 
