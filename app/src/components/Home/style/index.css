@@ -1,19 +1,37 @@
 #recomment{
     width : 100%;
     height: 1.28rem;
-    background: #Fcc
+   
+}
+#recomment>.swiper-container{
+    width: 100%;
+    height: 100%;
+}
+#recomment>.swiper-container>.swiper-wrapper{
+    width: 100%;
+    height: 100%
+}
+#recomment>.swiper-container>.swiper-wrapper>.swiper-slide{
+   height:.60rem;
+   text-align: center;
+   font-size: .30rem;
+   border:1px solid #e6e6e6;
+   line-height:.60rem;
+   margin-top:15px;
+  
+   
 }
 #navbar{
     width:100%;
     height: .88rem;
     margin-top: 10px;
-    background: red
+  
 }
 #content{
     width: 100%;
     height: 3.10rem;
     padding: 5px 0 18px;
-    background: #Fcc;
+   
     display: flex
   
 }
@@ -27,7 +45,7 @@
 #navscoll{
     width: 100%;
     height: 3.75rem;
-    background: red
+  
 }
 #navscoll>.nav_container{
     width: 100%;
@@ -46,10 +64,80 @@
     width: 100%;
     height: 100%;
     float: left;
-}
-#navscoll>.nav_container>.swiper-wrapper>.swiper-slide>div>img{
+}*/
+#navscoll>.nav_container>.swiper-wrapper>.swiper-slide>img{
     width: 100%;
     height: 100%;
     float: left;
     
-}*/
+}
+#newstop{
+
+    width: 100%;
+    height: .88rem;
+    padding:0 20px;
+    background: #ccc
+}
+#newstop span{
+    display: inline-block;
+    
+}
+#newstop #topnews{
+    width:.64rem;
+    height: .36rem;
+    padding: 0  .08rem;
+    margin-right:.10rem;
+    margin-top:.26rem;
+    background: red;
+    color: #fff
+}
+#newstop #new{
+    font-size :32px;
+    margin-top:.28rem;
+    margin-left:.10rem;
+}
+#contentlist{
+    border-top:1px solid #e6e6e6;
+    width: 100%;
+    height: 1.74rem;
+  
+}
+#contentlist a{
+    display:flex;
+    height: 1.74rem;
+    width: 1.50rem;
+    flex-direction:column;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    padding:.20rem 0 .40rem
+    
+}
+#contentlist a>img{
+    width: .80rem;
+    height: .80rem;
+}
+#adver,#getailisting{
+    width: 100%;
+    height: 2.28rem;
+    margin-top: .20rem;
+
+}
+#adver>a,#getailisting>a{
+    width: 100%;
+    height: 100%;
+    padding: .30rem;
+    display: flex;
+    justify-content: space-between
+}
+#adver>a>span,#getailisting>a>span{
+    display: block;
+    font-size: 32px;
+    color: #333;
+    line-height: 55px
+}
+#adver>a>img,#getailisting>a>img{
+    margin-left: .16rem;
+    width: 2.24rem;
+    height: 1.68rem
+}

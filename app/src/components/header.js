@@ -6,7 +6,7 @@ import {
 } from "../action/actionCreator"
 class Header extends Component{
     render(){
-        console.log(this.props)
+    
         return(
             <Fragment> 
                 <div className = "head_sea">  
