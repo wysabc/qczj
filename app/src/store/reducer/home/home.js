@@ -38,11 +38,7 @@ const defaultState={
 }
 
 export default (state=defaultState,action)=>{
-<<<<<<< HEAD
-    
-=======
 
->>>>>>> zzz
     switch (action.type){
         case "GET_CONTENT_FULFILLED" : 
             let getcontentlist=JSON.parse(JSON.stringify(state));
