@@ -141,3 +141,132 @@
     width: 2.24rem;
     height: 1.68rem
 }
+#creact{
+    width:100%;
+    height: 0.88rem;
+    background: #fcc
+}
+#creact>.navbar-container{
+    width: 100%;
+    height: 100%;
+}
+#creact>.navbar-container>.swiper-wrapper{
+    width: 100%;
+    height: 100%;
+}
+#creact>.navbar-container>.swiper-wrapper>.swiper-slide{
+    height: 100%;
+    width: 20%;
+    line-height:0.88rem;
+    text-align: center
+}
+#creact>.navbar-container>.swiper-wrapper>.swiper-slide>p{
+    font-size: 30px;
+}
+#all{
+    width: 100%;
+    height: 100%
+}
+#all>.car{
+    width: 100%;
+    height: 2.28rem;
+    display: flex;
+    justify-content: space-between;
+    padding: .30rem
+}
+#all>.car>img{
+    width: 2.24rem;
+    height: 1.68rem
+}
+#all>.car>p>span{
+    font-size: 30px
+}
+#all>.car>p>span:nth-child(2){
+    margin-left: 1.5rem;
+    font-size: .25rem
+}
+#all>.car>p>p:nth-child(3){
+    margin-top:40px;
+    font-size: .25rem;
+    
+}
+#all>.car>p>p>span{
+    color: red
+}
+
+#news{
+    width: 100%;
+    height: 100%;
+    
+}
+#news>#head{
+    width: 100%;
+    height: 4.30rem;
+    background: #FFF;
+    margin-bottom: .20rem
+}
+#news>#head>#title{
+    width: 100%;
+    height: .80rem;
+    border-bottom: 0.02rem solid #f5f5f5;
+    font-size: 0.3rem;
+    padding: .3rem .4rem;
+}
+#news>#head>.car_container{
+    width: 100%;
+    height: 3.88rem;
+    
+}
+#news>#head>.car_container>.swiper-wrapper{
+    padding-left: 0.30rem;
+   
+}
+#news>#head>.car_container>.swiper-wrapper>.swiper-slide{
+    width: 2.24rem;
+    height: 1.48rem;
+    padding: 0.24rem 0;
+    margin:0 .30rem 0 0
+}
+#news>#head>.car_container>.swiper-wrapper>.swiper-slide>img{
+    width: 2.24rem;
+    height:1.68rem
+}
+#news>#head>.car_container>.swiper-wrapper>.swiper-slide>p{
+    margin-top: .2rem;
+    font-size: .2rem;
+    color: #444;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+#usecar{
+    width: 100%;
+    
+}
+#usecar>div{
+    width: 100%;
+    height: .82rem;
+    border-bottom: 0.02rem solid #ccc;
+    padding-left: .30rem;
+    font-size: 0.3rem
+
+}
+
+#usecar>ul>li>img{
+    width: 1.8rem;
+    height: 1.36rem;
+    margin-right: 0.20rem
+    
+}
+#usecar>ul>li{
+    width: 100%;
+    padding:.24rem 0.3rem;
+    display: flex;
+    
+    
+}
+
+#usecar>ul>li>#info>p{
+    font-size: 0.30rem;
+    margin-bottom: 0.2rem
+}

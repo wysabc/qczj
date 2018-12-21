@@ -32,7 +32,7 @@ export const all_list_action = ()=>({
           fetch(url)
           .then(res=>res.json())
           .then((data)=>{
-               
+             
                resolve(data)
                
           })

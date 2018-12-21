@@ -14,6 +14,7 @@ import Server from "./components/Server/Server"
 import Used from "./components/Used/Used"
 import Creact from "./components/Home/children/child/creact"
 import Header from "./components/header"
+
 class App extends Component {
   render() {
     return (
@@ -38,7 +39,7 @@ class App extends Component {
            <div className = "content">
           
            <Switch>
-                <Route path = "/home"  component = {Home}></Route>
+                <Route path = "/home" component = {Home}></Route>
                 <Route path = "/find"  component = {Find}></Route>
                 <Route path = "/forum"  component = {Forum}></Route>
                 <Route path = "/login"  component = {Login}></Route>
@@ -47,6 +48,7 @@ class App extends Component {
                 <Route path = "/server"  component = {Server}></Route>
                 <Route path = "/used"  component = {Used}></Route>
                 <Route path="/creact" component={Creact} />
+               
                 <Redirect path = "/" to = "/home"></Redirect>
            </Switch>
           </div>
