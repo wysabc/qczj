@@ -25,6 +25,22 @@ export const quick_car = ()=>({
      })
 })
 
+<<<<<<< HEAD
+=======
+export const all_list_action = ()=>({
+     type : "ALL_CAR_ACTION",
+     payload:new Promise(resolve=>{
+          let url = "/hotcarlevel/getrankseries?cityId=210300&level=0";
+          fetch(url)
+          .then(res=>res.json())
+          .then((data)=>{
+             
+               resolve(data)
+               
+          })
+     })
+})
+>>>>>>> zzz
 
 
 

@@ -2,7 +2,7 @@
 
 const defaultState={
     list : [
-        {name : "七步买车",hrefs: "/"},
+        {name : "七步买车",hrefs: "https://m.autohome.com.cn/channel/#pvareaid=2028249"},
         {name : "原创",hrefs:"/creact"},
         {name : "新能源",hrefs: "/"},
         {name : "车家号",hrefs: "/"},
@@ -33,7 +33,10 @@ const defaultState={
         {href :"https://m.autohome.com.cn/activity/special/winter.html#pvareaid=6825987",src:"//www2.autoimg.cn/newsdfs/g30/M02/A5/91/autohomecar__ChcCSVt2i8CAejDgAAADDHlSy2Q059.png",name:"PK领奖"}
 
     ],
-    getailistings :[]
+    getailistings :[],
+    lowprice:[],
+    usecar:[]
+
     
 }
 
@@ -48,6 +51,16 @@ export default (state=defaultState,action)=>{
             let getailisting=JSON.parse(JSON.stringify(state))
             getailisting.getailistings=action.payload
             return getailisting
+        case "LOW_PRICE_FULFILLED" :
+            let getlowprice=JSON.parse(JSON.stringify(state))
+            getlowprice.lowprice=action.payload.list
+           
+            return getlowprice
+        case "USE_CAR_FULFILLED":
+            let getusecar=JSON.parse(JSON.stringify(state))
+            getusecar.usecar=action.payload.list
+          
+            return getusecar
         
     }
 

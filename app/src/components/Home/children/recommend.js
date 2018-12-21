@@ -2,10 +2,12 @@ import React,{Component} from "react"
 import "../../../../node_modules/swiper/dist/css/swiper.css"
 import Swiper from "swiper";
 import {Link} from "react-router-dom"
-export default class Recomment extends Component{
+
+
+export default  class Recomment extends Component{
     render(){
         let {list}=this.props
-        console.log(list)
+       
         return (
             <div id="recomment">
                 <div className="swiper-container swiper_recomment" ref="swiper_recomment">
@@ -33,3 +35,4 @@ export default class Recomment extends Component{
             })
     }
 }
+
