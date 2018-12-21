@@ -15,11 +15,7 @@ export default (state = defaultState,action)=>{
             quickCar.quickcar = action.payload;
             return quickCar;
             break;
-        case "ALL_CAR_ACTION_FULFILLED":
-            let allCar = JSON.parse(JSON.stringify(state));
-            allCar.alllist = action.payload;
-            return allCar;
-            break;   
+       
     }
     return state;
 }

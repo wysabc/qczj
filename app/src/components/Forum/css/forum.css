@@ -1,0 +1,167 @@
+.forum{
+    background: #f4f4f4
+}
+.banner {
+    width:100%;
+    overflow-x: hidden
+}
+.banner .swiper-wrapper{
+    width:100%;
+  
+}
+.banner .swiper-wrapper .swiper-slide{
+    width:100%;
+}
+.banner img{
+    width:100%;
+    display: block;
+
+}
+.banner .btns{
+    top:3.35rem
+}
+.logowrapper{
+   
+}
+.logoslide{
+    width:1.4rem;
+    height: 1.24rem;
+    
+}
+.logoslide>img{
+    margin-left: .3rem
+}
+.logoslide>p{
+    width:100%;
+    height:.24rem;
+    line-height: .24rem;
+    text-align: center;
+    margin-top: .2rem
+    
+}
+.swiper-container2{
+    padding: .52rem 0 .5rem 0;
+    background: #fff;
+    margin-bottom: .2rem
+}
+/*常用论坛*/
+.subfor{
+    background: #fff;
+    width:100%;
+    overflow: hidden;
+}
+.subfor_input{
+    width:90%;
+    margin: 0 auto;
+    height: .6rem;
+    border:.02rem solid #e6e6e6;
+    color: #999;
+    border-radius: .05rem;
+    margin-top: .2rem;
+    margin-bottom: .1rem;
+    font-size:.4rem
+}
+.subfor_input>input{
+    display: block;
+    width: 100%;
+    border:none;
+    height: 100%;
+    font-size:.27rem;
+    text-align: center;
+    color: #999
+}
+
+/*container*/
+.container{
+    width:100%;
+}
+.containernav{
+    width:100%;
+    height: .88rem
+}
+.containernav>a{
+    display: inline-block;
+    width:1.28rem;
+    height: 100%;
+    margin: 0 .3rem;
+    text-align: center;
+    line-height: .88rem;
+    font-size: .3rem
+}
+.containernav>a:nth-child(3){
+    float: right;
+    font-size: .25rem;
+}
+.containernav>.active{
+    color: #2873FF
+}
+.subfor_list{
+    width:100%;
+    height:.92rem;
+}
+.subfor_list>li{
+    width:100%;
+    text-align: center;
+    line-height: .92rem;
+    color: #999;
+}
+/*subfor_logo*/
+.subfor_logo{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    padding:.6rem 0
+}
+.subfor_logo>li{
+    width:100%;
+    text-align: center;
+    position: relative;
+    height:.9rem
+}
+.subfor_logo>li>a{
+    display: block;
+    width:100%;
+    height: 100%;
+}
+.subfor_logo>li>a>img{
+    width:.52rem;
+    height:.46rem;
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-left: -.26rem
+}
+.subfor_logo>li>a>p{
+    position: absolute;
+    bottom:0;
+    width:100%
+}
+
+/*列表导航*/
+.nav-swiper{
+    margin-top:.2rem ;
+    width:100%;
+    background: #fff;
+    overflow-x: hidden
+}
+.nav-box{
+    width:100%;
+    height:.88rem;
+    background: #fff;
+}
+.nav-box>div{
+    width: 1.5rem;
+    height:.88rem;
+}
+.nav-box>div>.small{
+    width:100%;
+    height: 100%;
+    display: block;
+    line-height: .88rem;
+    text-align: center
+}
+/*con_list*/
+.con_list{
+    width:100%;
+    background: #fff
+}

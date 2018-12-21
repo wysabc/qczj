@@ -35,7 +35,7 @@ class App extends Component {
               </ul>
               
            </div>
-           <div className = "content">
+           <div className = "content1">
           
            <Switch>
                 <Route path = "/home"  component = {Home}></Route>

@@ -109,7 +109,7 @@
 .header .head_nav li .active{
     opacity: 1
 }
-.content{
+.content1{
     width: 100%;
     position: absolute;
     top:1.76rem;
@@ -117,11 +117,7 @@
     right: 0;
     left:0;
     background: #fcf;
-    overflow-y: scroll;
-<<<<<<< HEAD
-=======
     overflow-x: hidden
->>>>>>> zzz
 }
 .header .head_nav li .down{
     font-size: .5rem;
