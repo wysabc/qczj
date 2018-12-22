@@ -1,10 +1,7 @@
 .header{
     width:100%;
     background: #2873FF;
-    position:fixed;
-    top:0;
-    left:0;
-    right: 0;
+ 
 }
 .header .head_sea{
     width:100%;
@@ -87,16 +84,16 @@
     font-size: .5rem
 }
 /*导航栏*/
-.header .head_nav{
+ .head_nav{
     display: flex;
     height: 50%;
 }
-.header .head_nav li{
+ .head_nav li{
     width: 100%;
     text-align: center;
     line-height: 100%
 }
-.header .head_nav li a{
+.head_nav li a{
    height: 100%;
    text-align: center;
    line-height: .8rem;
@@ -106,26 +103,20 @@
    opacity: 0.5;
    font-family:"黑体";
 }
-.header .head_nav li .active{
+.head_nav li .active{
     opacity: 1
 }
-.content1{
+.content{
     width: 100%;
-    position: absolute;
-    top:1.76rem;
-    bottom: 0;
-    right: 0;
-    left:0;
-    background: #fcf;
     overflow-x: hidden
 }
-.header .head_nav li .down{
+ .head_nav li .down{
     font-size: .5rem;
     color: #fff;
     line-height: .8rem;
     padding-right: .2rem
 }
-.header .head_nav li:nth-child(6){
+ .head_nav li:nth-child(6){
     width: 10%;
     
 }

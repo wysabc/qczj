@@ -27,6 +27,17 @@ class Header extends Component{
                     <p><span className = "iconfont app">&#xe66e;</span></p>
                     <div></div>
                 </div>
+                <ul className = "head_nav">
+                  <li><NavLink to = "/home">首页</NavLink></li>
+                  <li><NavLink to = "/find">找车</NavLink></li>
+                  <li><NavLink to = "/forum">论坛</NavLink></li>
+                  <li><NavLink to = "/used">二手车</NavLink></li>
+                  <li><NavLink to = "/server">服务</NavLink></li>
+                  <li><span className = "iconfont down">&#xe733;</span></li>
+                  {/*<li><NavLink to = "/my">个人</NavLink></li>
+                  <li><NavLink to = "/login">登录</NavLink></li>
+    <li><NavLink to = "/register">注册</NavLink></li>*/}
+              </ul>
             </Fragment>
         )
     }

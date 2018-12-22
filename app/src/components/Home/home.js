@@ -26,8 +26,8 @@ const Ailisting =Loadable({
            <Fragment>
                <Recomment list={list}/>
              
-               <Navbar/>
-               <Content getcontentlist={getcontentlist}/>
+               <Navbar getcontentlist={getcontentlist}/>
+              
                <Navscroll navlist={navlist}/>
                <Newstop />
                <Contentlist contentlist={contentlist}/>

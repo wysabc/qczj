@@ -5,6 +5,6 @@ import "./commit/css/reset.css";
 import "./commit/js/flexble";
 import "./commit/css/header.css";
 import "../node_modules/swiper/dist/css/swiper.css"
-
+import "../node_modules/antd/dist/antd.css"
 
 ReactDOM.render(<App />, document.getElementById('root'));
