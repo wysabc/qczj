@@ -3,6 +3,7 @@ import React,{Component} from "react"
 class List extends Component{
     render(){
      let {navlist} = this.props;
+     console.log(navlist)
         return(
         <ul className = "con_list">{
            
