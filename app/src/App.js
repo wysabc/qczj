@@ -14,20 +14,14 @@ import Server from "./components/Server/Server"
 import Used from "./components/Used/Used"
 import Creact from "./components/Home/children/child/creact"
 import Header from "./components/header"
-import BScroll from "better-scroll"
 class App extends Component {
-<<<<<<< HEAD
-  constructor(){
-    super();
-    this.state = {
-      flag:false
-=======
+
 
   constructor(){
     super();
     this.state = {
       flag:true
->>>>>>> zzz
+
     }
   }
   render() {
@@ -36,20 +30,12 @@ class App extends Component {
       <Provider store = {store}>
        <Router>
          <div>
-<<<<<<< HEAD
+
            
             <div className = "header">
             {flag?<Header handleAddClass = {this.handleAddClass}/>:"" } 
            </div>
-           <div className = "wrapper" ref = "wrapper"> 
-            <div className = "content">
-=======
-         <div className = "header">
-             {flag?<Header />:""}
-           </div>
-           <div className = "content">
-          
->>>>>>> zzz
+
            <Switch>
                 <Route path = "/home" component = {Home}></Route>
                 <Route path = "/find"  component = {Find}></Route>
@@ -63,23 +49,12 @@ class App extends Component {
                 <Redirect path = "/" to = "/home"></Redirect>
            </Switch>
           </div>
-          </div>
-         </div>
+         
        </Router>
       </Provider>
     );
   }
- componentDidMount(){
-      this.scroll = new BScroll(this.refs.wrapper,{
-        click:true,
-        pullUpLoad:true,
-        probeType:2
-    });
-    console.log(this.scroll)
-    /*this.scroll.on("pullingUp",()=>{
-      this.props.getNavData(this.props.page);
-  })*/
- }
+
 }
 
 export default App;

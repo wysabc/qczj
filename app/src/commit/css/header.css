@@ -1,11 +1,7 @@
 .header{
     width:100%;
     background: #2873FF;
-<<<<<<< HEAD
     right: 0;
-=======
- 
->>>>>>> zzz
 }
 .header .head_sea{
     width:100%;
@@ -110,12 +106,9 @@
     opacity: 1
 }
 .content{
-<<<<<<< HEAD
+
     width: 100%;  
-=======
-    width: 100%;
-    overflow-x: hidden
->>>>>>> zzz
+
 }
  .head_nav li .down{
     font-size: .5rem;

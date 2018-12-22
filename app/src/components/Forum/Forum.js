@@ -6,6 +6,7 @@ import Nav from "./forum/nav"
 import {connect} from "react-redux"
 import { long_nav_list } from "../../action/Forum/actionCreator";
 import "./css/forum.css"
+import BScroll from "better-scroll"
 
 class Forum extends Component{
     constructor(){
@@ -47,50 +48,29 @@ class Forum extends Component{
         let {navlist} = this.props;
         console.log(this.props)
         return(
-            
+            <div className = "wrapper" ref = "wrapper"> 
+            <div className = "content">
             <div className = "forum">
                 <Banner imglist = {imglist} logolist = {logolist}/>
                 <Subforum forumlist = {forumlist} subfor_logo = {subfor_logo}/>
                 <Nav logolist = {logolist}/>
                 <List navlist = {navlist}/>
-                <ul>
-                <li>fgbhj</li>
-                <li>fgbhj</li>
-                <li>fgbhj</li>
-                <li>fgbhj</li>
-                <li>fgbhj</li>
-                <li>fgbhj</li>
-                <li>fgbhj</li>
-                <li>fgbhj</li>
-                <li>fgbhj</li>
-                <li>fgbhj</li>
-                <li>fgbhj</li>
-                <li>fgbhj</li>
-                <li>fgbhj</li>
-                <li>fgbhj</li>
-                <li>fgbhj</li>
-                <li>fgbhj</li>
-                <li>fgbhj</li>
-                <li>fgbhj</li>
-                <li>fgbhj</li>
-                    <li>fgbhj</li>
-                    </ul>
+                </div>
+         </div>   
             </div>
         )
     }
     componentDidMount(){
-<<<<<<< HEAD
         this.scroll = new BScroll(this.refs.wrapper,{
             click:true,
-            pullUpLoad:true, 
-            probeType:2     
+            pullUpLoad:true,
+            probeType:2
         });
+
         this.scroll.on("pullingUp",()=>{
             this.props.getNavData(this.props.page);
         })
-=======
-        this.props.getNavData(this.props.page);
->>>>>>> wang3
+
     }
 } 
 const mapStateToProps = (state) =>({

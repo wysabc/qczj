@@ -34,19 +34,11 @@ class Header extends Component{
                     <div></div>
                 </div>
                 <ul className = "head_nav">
-<<<<<<< HEAD
                   <li><NavLink to = "/home" onClick = {this.handleAddClass.bind(this,0)} className = {this.state.activeIndex == 0?"active":""}>首页</NavLink></li>
                   <li><NavLink to = "/find" onClick = {this.handleAddClass.bind(this,1)} className = {this.state.activeIndex == 1?"active":""}>找车</NavLink></li>
                   <li><NavLink to = "/forum" onClick = {this.handleAddClass.bind(this,2)} className = {this.state.activeIndex == 2?"active":""}>论坛</NavLink></li>
                   <li><NavLink to = "/used" onClick = {this.handleAddClass.bind(this,3)} className = {this.state.activeIndex == 3?"active":""}>二手车</NavLink></li>
                   <li><NavLink to = "/server" onClick = {this.handleAddClass.bind(this,4)} className = {this.state.activeIndex == 4?"active":""}>服务</NavLink></li>
-=======
-                  <li><NavLink to = "/home">首页</NavLink></li>
-                  <li><NavLink to = "/find">找车</NavLink></li>
-                  <li><NavLink to = "/forum">论坛</NavLink></li>
-                  <li><NavLink to = "/used">二手车</NavLink></li>
-                  <li><NavLink to = "/server">服务</NavLink></li>
->>>>>>> zzz
                   <li><span className = "iconfont down">&#xe733;</span></li>
                   {/*<li><NavLink to = "/my">个人</NavLink></li>
                   <li><NavLink to = "/login">登录</NavLink></li>
