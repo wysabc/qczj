@@ -7,6 +7,7 @@ export const get_recomment=()=>({
         fetchJsonp(url).
         then(res=>res.json()).
         then((data)=>{
+            console.log(data)
             resolve(data)
         })
     })
@@ -18,7 +19,7 @@ export const get_ailisting=()=>({
       fetchJsonp(url).
       then(res=>res.json()).
       then((data)=>{
-          console.log(data)
+         
           resolve(data)
       })
 

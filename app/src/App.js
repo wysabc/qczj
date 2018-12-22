@@ -16,10 +16,18 @@ import Creact from "./components/Home/children/child/creact"
 import Header from "./components/header"
 import BScroll from "better-scroll"
 class App extends Component {
+<<<<<<< HEAD
   constructor(){
     super();
     this.state = {
       flag:false
+=======
+
+  constructor(){
+    super();
+    this.state = {
+      flag:true
+>>>>>>> zzz
     }
   }
   render() {
@@ -28,12 +36,20 @@ class App extends Component {
       <Provider store = {store}>
        <Router>
          <div>
+<<<<<<< HEAD
            
             <div className = "header">
             {flag?<Header handleAddClass = {this.handleAddClass}/>:"" } 
            </div>
            <div className = "wrapper" ref = "wrapper"> 
             <div className = "content">
+=======
+         <div className = "header">
+             {flag?<Header />:""}
+           </div>
+           <div className = "content">
+          
+>>>>>>> zzz
            <Switch>
                 <Route path = "/home" component = {Home}></Route>
                 <Route path = "/find"  component = {Find}></Route>

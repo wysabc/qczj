@@ -46,6 +46,7 @@ export default (state=defaultState,action)=>{
         case "GET_CONTENT_FULFILLED" : 
             let getcontentlist=JSON.parse(JSON.stringify(state));
             getcontentlist.contentlist=action.payload
+            
             return getcontentlist
         case "GET_AILISTING_FULFILLED":
             let getailisting=JSON.parse(JSON.stringify(state))
