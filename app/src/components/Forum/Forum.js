@@ -59,11 +59,10 @@ class Forum extends Component{
         )
     }
     componentDidMount(){
-      
         this.scroll = new BScroll(this.refs.wrapper,{
             click:true,
-            pullUpLoad:true,
-            probeType:2
+            pullUpLoad:true, 
+            probeType:2     
         });
         this.scroll.on("pullingUp",()=>{
             this.props.getNavData(this.props.page);
@@ -78,7 +77,6 @@ const mapStateToProps = (state) =>({
 const mapDispatchToProps = (dispatch)=>({
     getNavData(params){
          dispatch(long_nav_list(params));
-
     }
  })  
 export default connect(mapStateToProps,mapDispatchToProps)(Forum)
