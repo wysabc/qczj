@@ -1,11 +1,11 @@
 import React,{Component,Fragment} from "react"
+import BScroll from 'better-scroll'
 import Loadable from "react-loadable"
 import Loading from "../../commit/loading"
 import {connect} from "react-redux"
 import Recomment from "./children/recommend"
 import Navscroll from "./children/navscroll"
 import Navbar from "./children/navbar"
-import Content from "./children/content"
 import Newstop from "./children/newstop"
 import Contentlist from "./children/contentlist"
 //import Ailisting from "./children/ailisting"
@@ -24,6 +24,8 @@ const Ailisting =Loadable({
         let {getcontentlist,navlist,list,contentlist,getailisting}=this.props
         return(
            <Fragment>
+               <div className="wrapper" ref="wrapper">
+                <div className="content">
                <Recomment list={list}/>
              
                <Navbar getcontentlist={getcontentlist}/>
@@ -33,12 +35,16 @@ const Ailisting =Loadable({
                <Contentlist contentlist={contentlist}/>
                <Adver />
                {/*<Ailisting  getailisting={getailisting}/>*/}
+               </div>
+               </div>
            </Fragment>
         )
     }
     componentDidMount(){
         this.props.getData();
         this.props.getAilisting()
+        let scroll = new BScroll(this.refs.wrapper)
+        console.log(scroll)
        
     }
 } 

@@ -32,7 +32,7 @@ class App extends Component {
          <div className = "header">
              {flag?<Header />:""}
            </div>
-           <div className = "content">
+           <div className = "content1">
           
            <Switch>
                 <Route path = "/home" component = {Home}></Route>
