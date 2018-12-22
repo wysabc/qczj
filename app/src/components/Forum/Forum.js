@@ -42,10 +42,10 @@ class Forum extends Component{
         }
     }
     render(){
-        console.log(this.props.navlist.list)
+     
         let {imglist,logolist,forumlist,subfor_logo} = this.state;
         let {navlist} = this.props;
-        console.log(navlist)
+     
         return(
             <div className = "wrapper" ref="wrapper">
             <div className = "content">

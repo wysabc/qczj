@@ -18,11 +18,9 @@ const reducers = combineReducers({
     Findcar,
     Quickcar,
     AllList,
-<<<<<<< HEAD
-    Longnav
-=======
+    Longnav,
     creact
->>>>>>> zzz
+
 })
 const store=createStore(reducers,applyMiddleware(reduxPromiseMiddleware()))
 export default store;
