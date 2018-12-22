@@ -14,30 +14,26 @@ import Server from "./components/Server/Server"
 import Used from "./components/Used/Used"
 import Creact from "./components/Home/children/child/creact"
 import Header from "./components/header"
-
+import BScroll from "better-scroll"
 class App extends Component {
+  constructor(){
+    super();
+    this.state = {
+      flag:false
+    }
+  }
   render() {
+    let {flag} = this.state;
     return (
       <Provider store = {store}>
        <Router>
          <div>
-         <div className = "header">
-             <Header />
-              <ul className = "head_nav">
-                  <li><NavLink to = "/home">首页</NavLink></li>
-                  <li><NavLink to = "/find">找车</NavLink></li>
-                  <li><NavLink to = "/forum">论坛</NavLink></li>
-                  <li><NavLink to = "/used">二手车</NavLink></li>
-                  <li><NavLink to = "/server">服务</NavLink></li>
-                  <li><span className = "iconfont down">&#xe733;</span></li>
-                  {/*<li><NavLink to = "/my">个人</NavLink></li>
-                  <li><NavLink to = "/login">登录</NavLink></li>
-    <li><NavLink to = "/register">注册</NavLink></li>*/}
-              </ul>
-              
+           
+            <div className = "header">
+            {flag?<Header handleAddClass = {this.handleAddClass}/>:"" } 
            </div>
-           <div className = "content1">
-          
+           <div className = "wrapper" ref = "wrapper"> 
+            <div className = "content">
            <Switch>
                 <Route path = "/home" component = {Home}></Route>
                 <Route path = "/find"  component = {Find}></Route>
@@ -48,16 +44,26 @@ class App extends Component {
                 <Route path = "/server"  component = {Server}></Route>
                 <Route path = "/used"  component = {Used}></Route>
                 <Route path="/creact" component={Creact} />
-               
                 <Redirect path = "/" to = "/home"></Redirect>
            </Switch>
+          </div>
           </div>
          </div>
        </Router>
       </Provider>
-
     );
   }
+ componentDidMount(){
+      this.scroll = new BScroll(this.refs.wrapper,{
+        click:true,
+        pullUpLoad:true,
+        probeType:2
+    });
+    console.log(this.scroll)
+    /*this.scroll.on("pullingUp",()=>{
+      this.props.getNavData(this.props.page);
+  })*/
+ }
 }
 
 export default App;
