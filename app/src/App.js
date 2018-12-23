@@ -15,8 +15,6 @@ import Used from "./components/Used/Used"
 import Creact from "./components/Home/children/child/creact"
 import Header from "./components/header"
 class App extends Component {
-
-
   constructor(){
     super();
     this.state = {
@@ -30,12 +28,9 @@ class App extends Component {
       <Provider store = {store}>
        <Router>
          <div>
-
-           
             <div className = "header">
             {flag?<Header handleAddClass = {this.handleAddClass}/>:"" } 
            </div>
-
            <Switch>
                 <Route path = "/home" component = {Home}></Route>
                 <Route path = "/find"  component = {Find}></Route>
@@ -49,7 +44,6 @@ class App extends Component {
                 <Redirect path = "/" to = "/home"></Redirect>
            </Switch>
           </div>
-         
        </Router>
       </Provider>
     );
