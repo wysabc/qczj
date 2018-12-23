@@ -1,16 +1,20 @@
 import React, { Component } from "react"
+import { Link } from "react-router-dom"
+
 class Alllist extends Component {
     render() {
-        let { quickcar } = this.props;
+        let { carlist } = this.props;
         return (
             <div className="allcar">
                 <ul>
                     {
-                        quickcar.map((item, index) => {
-                            return <li key={index}>
-                                <img src={item.brandlogo} />
-                                <p>{item.brandname}</p>
-                            </li>
+                        carlist.map((item, index) => {
+                            return <li key={index} >
+                               <Link to = {"/more?"+index} > 
+                               <img src={item.picitems[0]} />
+                                    <span>{item.name}</span>
+                                </Link>
+                                </li>
                         })
 
                     }
@@ -18,6 +22,6 @@ class Alllist extends Component {
             </div>
         )
     }
-
+    
 }
 export default Alllist

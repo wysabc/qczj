@@ -1,6 +1,7 @@
 import React,{Component,Fragment} from "react"
 import {NavLink} from "react-router-dom";
 import {connect} from "react-redux";
+import Observer from "./observer"
 import {
     head_list_action
 } from "../action/actionCreator"
@@ -8,8 +9,14 @@ class Header extends Component{
     constructor(){
         super();
         this.state = {
-            activeIndex:-1
+            activeIndex:-1,
+            islogin:false
         }
+        Observer.$on("islogin",(params)=>{
+            this.setState({
+                islogin:params
+            })
+        })
     }
     render(){
        
@@ -31,7 +38,12 @@ class Header extends Component{
                         <span className = "iconfont icon">&#xe642;</span>
                     </p>
                     <p><span className = "iconfont app">&#xe66e;</span></p>
-                    <div></div>
+                    <div>
+                    <NavLink to = {this.state.islogin?"/my":"/login"} onClick = {this.changeHead.bind(this)}></NavLink>
+                         {/*<NavLink to = "/my" onClick = {this.changeHead.bind(this)}></NavLink>
+                           
+                            */}
+                    </div>
                 </div>
                 <ul className = "head_nav">
                   <li><NavLink to = "/home" onClick = {this.handleAddClass.bind(this,0)} className = {this.state.activeIndex == 0?"active":""}>首页</NavLink></li>
@@ -40,9 +52,7 @@ class Header extends Component{
                   <li><NavLink to = "/used" onClick = {this.handleAddClass.bind(this,3)} className = {this.state.activeIndex == 3?"active":""}>二手车</NavLink></li>
                   <li><NavLink to = "/server" onClick = {this.handleAddClass.bind(this,4)} className = {this.state.activeIndex == 4?"active":""}>服务</NavLink></li>
                   <li><span className = "iconfont down">&#xe733;</span></li>
-                  {/*<li><NavLink to = "/my">个人</NavLink></li>
-                  <li><NavLink to = "/login">登录</NavLink></li>
-    <li><NavLink to = "/register">注册</NavLink></li>*/}
+                  
               </ul>
             </Fragment>
         )
@@ -54,8 +64,10 @@ class Header extends Component{
         this.setState({
           activeIndex:val
         })
-       
-      }
+    }
+    changeHead(){
+        Observer.$emit("changeHead",false)
+    }
 
 } 
 

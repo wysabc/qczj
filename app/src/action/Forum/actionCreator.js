@@ -9,7 +9,6 @@ export const long_nav_list = (page)=>({
         fetchJsonp(url)
         .then(res=>res.json())
         .then((data)=>{
-            console.log(data)
             resolve(data)
         })
 

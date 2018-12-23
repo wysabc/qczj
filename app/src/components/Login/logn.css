@@ -1,0 +1,57 @@
+.head{
+    width:100%;
+    background: #3b5998;
+    height: .8rem;
+    display: flex;
+    justify-content: space-between
+}
+.login>.head>span{
+    width:1rem;
+    height: .56rem;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    line-height: .56rem;
+    font-size: .3rem;
+    margin:.12rem ;
+
+}
+.head>span:nth-child(2){
+    background: none;
+    font-size: .35rem
+}
+.input{
+    height:.64rem;
+    font-size: .3rem;
+    border: solid #d0d6e1 1px;
+    background: #f5f6f9;
+    margin:.2rem ;
+    border-radius:.05rem ;
+    text-indent: .2rem
+}
+.uname{
+    width:95%;
+}
+.pwd{
+    width:95%;
+}
+.yzm{
+    width:60%
+}
+.btn{
+    width:30%;
+    margin: .2rem .12rem
+}
+.box .logins{
+    width:95%;
+    background: #5f7dbe;
+    color: #fff;
+}
+.box>p{
+    width: 100%;
+    font-size: .2rem;
+    color: #999;
+    text-align: center;
+    margin: .3rem 0
+}

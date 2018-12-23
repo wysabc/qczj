@@ -19,6 +19,13 @@
     margin-top: .2rem;
     background: url(//s.autoimg.cn/mass/avatar.png) no-repeat;
 }
+.header .head_sea>div>a{
+    display: block;
+    width:100%;
+    height: 100%;
+}
+
+
 
 .header>.head_sea>p:nth-of-type(1)>a{
     font-size: .4rem;
@@ -82,6 +89,9 @@
 .header>.head_sea>p:nth-of-type(3)>span{
     font-size: .5rem
 }
+
+
+
 /*导航栏*/
  .head_nav{
     display: flex;
@@ -135,3 +145,8 @@
     top: 0rem;
     overflow: hidden;
 }
+.content{
+    padding-bottom: .5rem
+}
+
+
