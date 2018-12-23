@@ -31,6 +31,11 @@ class App extends Component {
             <div className = "header">
             {flag?<Header handleAddClass = {this.handleAddClass}/>:"" } 
            </div>
+<<<<<<< HEAD
+=======
+           <div className = "content1">
+          
+>>>>>>> zzz
            <Switch>
                 <Route path = "/home" component = {Home}></Route>
                 <Route path = "/find"  component = {Find}></Route>

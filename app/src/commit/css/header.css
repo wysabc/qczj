@@ -105,10 +105,16 @@
 .head_nav li .active{
     opacity: 1
 }
+<<<<<<< HEAD
 .content{
 
     width: 100%;  
 
+=======
+.content1{
+    width: 100%;
+    overflow-x: hidden
+>>>>>>> zzz
 }
  .head_nav li .down{
     font-size: .5rem;

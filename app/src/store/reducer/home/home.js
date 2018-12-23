@@ -35,7 +35,9 @@ const defaultState={
     ],
     getailistings :[],
     lowprice:[],
-    usecar:[]
+    usecar:[],
+    moneycar:[],
+    sizecar:[]
 
     
 }
@@ -60,8 +62,15 @@ export default (state=defaultState,action)=>{
         case "USE_CAR_FULFILLED":
             let getusecar=JSON.parse(JSON.stringify(state))
             getusecar.usecar=action.payload.list
-          
             return getusecar
+        case "CAR_MONEY_FULFILLED" :
+          let getmoneycar=JSON.parse(JSON.stringify(state))
+          getmoneycar.moneycar=action.payload.result
+          return getmoneycar
+        case "SIZE_CAR_FULFILLED" :
+        let getsizecar=JSON.parse(JSON.stringify(state))
+        getsizecar.sizecar=action.payload.result
+        return getsizecar
         
     }
 
