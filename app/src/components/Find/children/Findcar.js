@@ -3,7 +3,8 @@ import { connect } from "react-redux"
 import Hot from "./findcar/hot"
 import Quick from "./findcar/quick"
 import Alllist from "./findcar/alllist"
-import { findcar_list_action, quick_car } from "../../../action/Find/actionCreator"
+import { findcar_list_action, quick_car } from "../../../action/Find/actionCreator";
+
 class Findcar extends Component {
     render() {
         let { carlist, quickcar } = this.props;
@@ -11,7 +12,7 @@ class Findcar extends Component {
             <div className="findcar">
                 <Hot carlist={carlist} />
                 <Quick quickcar={quickcar} />
-                <Alllist quickcar={quickcar} />
+                <Alllist carlist={carlist} />
             </div>
         )
     }

@@ -23,6 +23,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "antd": "^3.11.3",
     "better-scroll": "^1.13.2",
     "fetch-jsonp": "^1.1.3",
     "http-proxy-middleware": "^0.19.1",

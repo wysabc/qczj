@@ -14,4 +14,41 @@ export const head_list_action = ()=>({
         })
     })
 })
-
+ export const login_action = (tel,pwd)=>({
+  
+     type : "LOGIN_ACTION",
+     payload: new Promise(resolve=>{
+        console.log(tel,pwd)
+        let url = "http://localhost:3000/user";
+        fetch(url)
+        .then(res=>res.json())
+        .then((data)=>{
+            data = data.filter((item)=>{
+                return item.tel == tel && item.pwd == pwd;
+            })
+            resolve(data)
+            
+        })
+    })
+ })
+ export const register_action = (tel,pwd)=>({
+    type : "REGISTER_ACTION",
+    payload: new Promise(resolve=>{
+       console.log(tel,pwd)
+       let url = "http://localhost:3000/user";
+       fetch(url,{
+           method:"post",
+            body:JSON.stringify({tel:tel,pwd:pwd}),
+            herders:{
+                "content-type":"application/json"
+            }
+       })
+       .then(res=>res.json())
+       .then((data)=>{
+           console.log(data)
+          // data.push({tel:tel,pwd:pwd})
+           resolve({tel:tel,pwd:pwd})
+           
+       })
+   })
+})

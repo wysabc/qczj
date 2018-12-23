@@ -1,0 +1,198 @@
+.my{
+    width:100%;
+    height:100%;
+    background: #f4f4f4
+}
+.my>.head{
+    width:100%;
+    height:.88rem;
+    background: #2873ff;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    font-size: .4rem;
+    line-height: .88rem
+}
+.my>.head>span{
+    font-size: .4rem;
+    padding: 0 .2rem
+}
+.my>.head>span:nth-child(2){
+    font-size: .5rem
+}
+.my>.head>span:nth-child(3){
+    padding:0 .8rem
+}
+.my>.head>span:nth-child(5){
+   line-height: .75rem
+}
+.my>.blueBox{
+    width:100%;
+    height:4.12rem;
+    background: #2873ff;
+    margin-top: -.02rem
+}
+.myhead{
+    width:100%;
+    height:2.2rem;
+    display: flex;
+   position: relative;
+}
+.myhead>.photo{
+    width:1.4rem;
+    height: 1.4rem;
+    border-radius: 50%;
+    background: url(http://x.autoimg.cn/space/images/head_female_50X50.png) no-repeat;
+    background-size:cover ;
+    margin: .4rem
+}
+.myhead>div:nth-child(2){
+    width:2rme;
+    height: 100%;
+    padding: .4rem 0;
+}
+.myhead>div:nth-child(2)>p{
+    width:100%;
+    height:.7rem;
+    color: #fff;
+    font-size: .32rem;
+    line-height: .7rem
+}
+.myhead>div:nth-child(2)>p:nth-child(2){
+    background: url(//x.autoimg.cn/i.m/images/level/lv1.png?v=2018-12-13) no-repeat
+}
+.myhead>div:nth-child(3){
+   position: absolute;
+    background: rgba(255,255,255,0.1);
+    width:1.8rem;
+    height: .64rem;
+    border-radius: .64rem 0 0 .64rem;
+    right: 0;
+    top:.8rem;
+    color: #fff;
+    text-align: center;
+    line-height: .64rem;
+    font-size: .25rem;
+    padding-left: .6rem
+}
+.myhead>div:nth-child(3)>span{
+    display: inline-block;
+    width: .48rem;
+    height:.48rem;
+    background: rgba(255,255,255,0.1);
+    border-radius: 50%;
+    position: absolute;
+    top:.09rem;
+    left:.12rem;
+    font-size: .4rem;
+    line-height: .48rem
+}
+.blueBox>ul{
+    border-top: 1px solid rgba(255,255,255,0.2);
+    margin: 0 .4rem; 
+    display: flex;
+    width:90%;
+    height: 1.13rem;
+}
+.blueBox>ul>li{
+   
+    width:50%;
+    margin: .16rem 0
+}
+.blueBox>ul>li:nth-child(1){
+    border-right: 1px solid rgba(255,255,255,0.2);
+
+}
+.blueBox>ul>li>p{
+width:100%;
+height:.48rem;
+color: #fff;
+text-align: center;
+}
+.blueBox>ul>li>p:nth-child(1){
+    font-size: .3rem
+}
+.blueBox>div:nth-child(3)>p{
+    width:6rem;
+    height: .84rem; 
+    line-height: .84rem
+}
+.blueBox{
+    position: relative;
+    margin-bottom: 1rem
+}
+.blueBox>div:nth-child(3){
+    position: absolute;
+    padding: .32rem .3rem .32rem .3rem;
+    background: #fff;
+    border-radius: .1rem;
+    left:50%;
+    margin-left: -3.3rem ;
+    font-size: .4rem;
+    
+}
+.blueBox>div:nth-child(3)>p>span:nth-child(1){
+    background: url(//s.autoimg.cn/club/account/m/images/icon-crown.png);
+    display: inline-block;
+    width:.84rem;
+    height: .84rem;
+}
+.blueBox>div:nth-child(3)>p>span:nth-child(3){
+    width:.84rem;
+    height: .84rem;
+    display: inline-block;
+    position: absolute;
+    right: .1rem;
+    font-size: .4rem
+}
+.blueBox>div:nth-child(3)>p>span:nth-child(2){
+  position: absolute;
+  top:.3rem;
+  left:1.35rem
+}
+.con{
+    background: #fff;
+    width:100%
+}
+.con>div{
+    height:2.6rem;
+    width: 100%;
+}
+.con>div>h1{
+    font-weight: normal;
+    position: relative;
+    height: .88rem;
+    line-height: .88rem;
+    padding-left: .5rem;
+    font-size:.3rem
+}
+.con>div>h1::after{
+    content: "";
+    display: block;
+    position: absolute;
+    left:.3rem;
+    top:50%;
+    margin-top:-.15rem; 
+    width:.05rem;
+    height: .3rem;
+    background: #2873fe;
+}
+.con>div>ul{
+    display: flex;
+    width:100%;
+  
+}
+.con>div>ul>li{
+    width:100%;
+    height: 1.74rem;
+}
+.con>div>ul>li>p{
+    width:100%;
+    height: .8rem;
+    line-height: .8rem;
+    text-align: center;
+}
+.con>div>ul>li>.iconfont{
+    font-size: .4rem;
+    color: #2873fe
+}
